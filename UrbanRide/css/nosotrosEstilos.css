@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Poppins:wght@100;400;500;800&display=swap');
 
+*{
+    margin: 0;
+}
+
 .cabeceraPrincipal {
     background: black;
     display: flex;
@@ -8,48 +12,34 @@
     color: black;
     padding: 10px;
 }
-
-.menuPrincipal {
-    display: flex;
-    align-items: center;
-}
-
-.menuPrincipal a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-right: 49px;
-    justify-content: flex-end;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+.menuPrincipal{
+    font-family: 'Poppins', sans-serif;;
 }
 
 .logoWh {
     margin-left: 80px;
 }
 
-.menuPrincipal a:hover {
-    color: #BE0F30; 
-    border-bottom: 2px solid #BE0F30; 
-    transition: .4s;
+.menuPrincipal a{
+    padding: 0em 2em;
+	text-decoration: none;
+    color: #FFFFFF; 
+    font-weight: 400;
 }
 
-button {
-    background: none;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    width: 106px;
-    height: 40px;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    position: relative;
+.menuPrincipal button{
+    padding: 0em 2em;
+	text-decoration: none;
 }
 
-.fa-user {
-    margin-right: 5px;
-    position: absolute;
-    left: -14px;
+.menuPrincipal button:hover{
+    color: #BE0F30;
+	border-bottom: solid 2px #BE0F30;
+}
+
+.menuPrincipal a:hover{
+	color: #BE0F30;
+	border-bottom: solid 2px #BE0F30;
 }
 
 .info1 {
@@ -61,6 +51,7 @@ button {
 
 p{
     margin-left: 30px;
+    margin-right: 80px;
     font-size: 30px;
     font-family: 'Anek Latin', sans-serif;
 }
@@ -69,12 +60,14 @@ h3{
     margin-left: 30px;
     font-size: 40px;
     font-family: 'Anek Latin', sans-serif;
+    padding-bottom: 15px;
 }
 
 .info2{
     text-align: center;
     background: #C5A76A;
-    height: 780px;
+    height: 740px;
+    margin-top: 30px;
 }
 
 .info2 img{
@@ -82,10 +75,17 @@ h3{
     height: 450px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 800px;
+    padding-top: 25px;
 }
 
 .info2 h3{
     padding-top: 40px;
+}
+
+.info2 p{
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
 }
 
 .piePag {
