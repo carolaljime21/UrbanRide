@@ -1,0 +1,69 @@
+.principal {
+    background-image: url('C:/Users/HP/Desktop/UrbanRide/images/MainFoto.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    height: 550px;
+}
+
+
+.cabeceraPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+}
+
+.menuPrincipal {
+    display: flex;
+    align-items: center;
+}
+
+.menuPrincipal a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 49px;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    width: 100%;
+    height: 280px;
+}
+
+
+.menuPrincipal a:hover {
+    color: #BE0F30;
+    transition: .4s;
+}
+
+button {
+    background: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    width: 106px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    position: relative;
+}
+
+.fa-user {
+    margin-right: 5px;
+    position: absolute;
+    left: -14px;
+}
+
+.Frase {
+    background-color: rgba(24, 24, 24, 0.205);
+    backdrop-filter: blur(10px);
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin: 70px;
+}
