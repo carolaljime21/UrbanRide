@@ -56,28 +56,111 @@ button {
 
 /* Estilos del contenido de la pagina */
 
-.eBike,
-.eScooter {
+.eBike{
     position: relative; 
 }
 
-.eBike img,
-.eScooter img {
+.eBike img, .info2 img, .info3 img{
     width: 100%;
 }
 
-.eBike h3,
-.eScooter h3 {
+.eBike h2{
     position: absolute;
-    bottom: 65px; /* Ajusta según sea necesario para la posición vertical */
+    top: 65px; /* Ajusta según sea necesario para la posición vertical */
     left: 110px; /* Ajusta según sea necesario para la posición horizontal */
     color: #FFFFFF; 
     font-family: 'Anek Latin', sans-serif;
     margin: 0;
-    font-weight: 1000;
-    font-size: 75px;
-    background: rgba(193, 189, 189, 0.17);
+    font-weight: 700;
+    font-size: 100px;
+    /*Difuminado del titulo*/
+    background: rgba(70, 67, 67, 0.54);
     border-radius: 10px;
+}
+
+.information{
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.info1{
+    background-color: #282828;
+    display: flex;
+	justify-content: space-between;
+    flex-direction: column;
+}
+
+.info1 h3{
+    color: #FFFFFF;
+    text-align: center; 
+    padding: 10px;
+}
+
+.infoCard {
+    text-align: center;
+    width: 80%;
+    margin: 10px auto; 
+    background-color: #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+.infoCard h4{
+    color: #C5A76A;
+    font-weight: 600;
+}
+
+.infoCard p{
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+.info2{
+    position: relative;
+}
+
+.info2 p{
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    color: #282828; 
+    font-weight: 800;
+    font-size: 50px;
+    text-align: left;
+    width: 300px;
+}
+
+.info4{
+    background-color: #C5A76A;
+    align-items: center;
+    display: flex;
+	justify-content: space-between;
+}
+
+.info4 section{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info4 section h3{
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	padding: 1em 0;
+}
+
+.info4 section p{
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 1em 0;
 }
 
 
