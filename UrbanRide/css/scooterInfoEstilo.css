@@ -56,26 +56,23 @@ button {
 
 /* Estilos del contenido de la pagina */
 
-.eBike{
+.eScooter{
     position: relative; 
 }
 
-.eBike img, .info2 img, .info3 img{
+.eScooter img, .info2 img, .info3 img{
     width: 100%;
 }
 
-.eBike h2{
+.eScooter h2{
     position: absolute;
     top: 65px; /* Ajusta según sea necesario para la posición vertical */
     left: 110px; /* Ajusta según sea necesario para la posición horizontal */
-    color: #FFFFFF; 
+    color: #BE0F30; 
     font-family: 'Anek Latin', sans-serif;
     margin: 0;
     font-weight: 700;
     font-size: 100px;
-    /*Difuminado del titulo*/
-    background: rgba(70, 67, 67, 0.54);
-    border-radius: 10px;
 }
 
 .information{
@@ -95,7 +92,7 @@ button {
     color: #FFFFFF;
     text-align: center; 
     padding: 15px;
-    font-size: 400;
+    font-size: 30px;
 }
 
 .infoCard {
@@ -126,11 +123,11 @@ button {
     position: absolute;
     top: 40px;
     left: 110px;
-    color: #282828; 
-    font-weight: 800;
+    color: #FFFFFF; 
+    font-weight: 600;
     font-size: 50px;
     text-align: left;
-    width: 300px;
+    width: 500px;
 }
 
 .info4{
@@ -145,15 +142,17 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 40px;
+    right: 300px;
+    background-color: #FFFFFF;
 }
 
 .info4 section h3{
-	align-items: center;
-	text-align: center;
-	font-size: 16px;
+	align-items: left;
+	text-align: left;
+	font-size: 30px;
 	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
+	font-weight: 600;
 	padding: 1em 0;
 }
 
@@ -204,3 +203,8 @@ button {
     margin-left: 0px;
 }
 
+.piePag a:hover {
+    color: #7a7676; 
+    border-bottom: none; 
+    transition: .4s;
+}
