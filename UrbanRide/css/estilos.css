@@ -10,76 +10,75 @@
     background-size: 100%;
     background-position: start;
     background-repeat: no-repeat;
-    width: 1440px;
-    height: 2000px;
+    height: 620px;
     margin: auto;
     font-family: 'Anek Tamil', sans-serif;
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
-
 }
 
-.cabeceraPrincipal{
-	margin: 0 auto;
-    padding: 1em;
-	display: flex;
-	align-items: center;
+.cabeceraPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+    margin-right: 80px;
+    
 }
-.cabeceraPrincipal img{
-    width: 15%;
-	padding: 1em 7em;
+.menuPrincipal{
+    font-family: 'Poppins', sans-serif;;
 }
 
-.cabeceraPrincipal a{
+.logoWh {
+    margin-left: 80px;
+}
+
+.menuPrincipal a{
     padding: 0em 2em;
 	text-decoration: none;
     color: #FFFFFF; 
     font-weight: 400;
 }
 
-.cabeceraPrincipal button{
+.menuPrincipal button{
     padding: 0em 2em;
 	text-decoration: none;
 }
 
-.cabeceraPrincipal button:hover{
+.menuPrincipal button:hover{
     color: #BE0F30;
 	border-bottom: solid 2px #BE0F30;
 }
 
-.cabeceraPrincipal a:hover{
+.menuPrincipal a:hover{
 	color: #BE0F30;
 	border-bottom: solid 2px #BE0F30;
 }
-
 
 .Frase {
     color: #FFFFFF;
     display: flex;
     width: 988px;
-    margin: 5em 16.7em;
-    padding: 88px 5px 53px 5px;
     flex-direction: column;
     align-items: center;
     gap: 100px; 
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
+    margin: auto;
+    margin-top: 100px; 
 }
-
 .Frase h1 {
     margin: 0em 3em;
     font-size: 3.5em;
-    font-weight: 600;
-    
+    font-weight: 600; 
 }
-
 .Frase h2 {
     margin: -1.7em 3em;
     font-size: 3.5em;
     font-weight: 600;
 }
-
 .Frase p{
     color: #FFF;
     text-align: center;
@@ -89,7 +88,6 @@
     font-weight: 400;
     line-height: normal; 
 }
-  
 
 .titulosPage{
 	margin: 240px 160px -240px 160px;
@@ -97,12 +95,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
 .servicios{
 	margin: 240px 140px -240px 140px;
 	text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
 .titulosPage h3{
     color: #BE0F30;
     text-align: center;
@@ -112,9 +110,8 @@
     font-weight: 400;
     line-height: normal; 
 }
-
 .titulosPage h4{
-    color: var(--primario2, #000);
+    color: #000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Roboto;
     font-size: 32px;
@@ -128,13 +125,9 @@
 	display: flex;
     justify-content: center;
 }
-
-
-
-
 .itemCard{
     border-radius: 25px;
-    background: var(--secundario2, #282828);
+    background: #282828;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	width: 23%;
 	margin: 1em;
@@ -161,23 +154,26 @@
 }
 
 .logos{
-    margin: 300px 0px 40px 0px;
+    margin-top: 270px;
     display: flex;
-    width: 507px;
-    padding: 25px 467px 17px 467px;
+    width: 100%;
     align-items: center;
+    justify-content: center;
     display: inline-flex;
     height: 180px;
     align-items: flex-start;
     gap: 146px;
     flex-shrink: 0; 
-    background: var(--secundario1, #C5A76A);
+    background: #C5A76A;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .noticias .noticia1{
     display: flex;
     align-items: center;
-    margin: 0em 8em;
+    margin-right: 80px;
+    margin-left: 80px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
@@ -185,9 +181,10 @@
 .noticias .noticia2{
     display: flex;
     align-items: center;
-    margin: 0em 8em;
+    margin-right: 80px;
+    margin-left: 80px;
     text-align: right;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -198,7 +195,8 @@
 .noticias .noticia3{
     display: flex;
     align-items: center;
-    margin: 0em 8em;
+    margin-right: 80px;
+    margin-left: 80px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
@@ -218,6 +216,7 @@
 .lugar h1{
 	text-align: center;
     font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
 }
 
 .lugar h2{
@@ -230,4 +229,8 @@
 .lugar1, .lugar2{
     display: flex;
     align-items: center;
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
+
