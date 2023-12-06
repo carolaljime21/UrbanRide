@@ -8,7 +8,9 @@ body {
     background-color: #282828;
     display: flex;
     justify-content: space-between;
-    margin: 100px 100px;
+    margin-left: 100px ;
+    margin-right: 100px ;
+    margin-top: 25px;
     border-radius: 15px;
     height: 600px;
 }
@@ -89,7 +91,7 @@ body {
     border-radius: 30px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    margin: 30px 170px;
+    margin: 30px 260px;
 }
 
 button:hover {
@@ -117,6 +119,7 @@ button:hover {
 
 .createAccount a{
     color: #BE0F30; 
+    padding-left: 3px;
 }
 
 .createAccount a:hover {
