@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&family=Inter&family=Roboto&display=swap');
+
+body {
+    background-color: #D9D9D9;
+}
+
+.loginContainer {
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 240px;
+    border-radius: 15px;
+}
+
+.loginContainer img{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.registro {
+    padding: 10px;
+    margin: 25px 65px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.registro h2 {
+    font-family: 'Anek Tamil', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 0.2;
+    margin-bottom: 10px;
+}
+
+.registro h3 {
+    font-family: 'Anek Tamil', sans-serif;
+    color: #BE0F30;
+    font-size: 20px;
+    line-height: 0.2;
+    margin-bottom: 50px;
+}
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.input input {
+    background-color: #D9D9D9;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    border: 0;
+}
+
+.input input:focus {
+    border: 2px solid #BE0F30;
+}
+
+.createAccount {
+    font-family: 'Anek Tamil', sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+
+.boton button{
+    background-color: #BE0F30;
+    padding: 8px 20px;
+    font-family: 'Anek Tamil', sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight:900;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 30px 170px;
+}
+
+button:hover {
+    background-color: #94162d;
+}
+
+.createAccount {
+    font-family: 'Anek Tamil', sans-serif;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    justify-content: flex-end;
+    align-items: center; 
+
+}
+
+.createAccount {
+    font-family: 'Anek Tamil', sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: 150px; 
+    right: 20px; 
+}
+
+.createAccount a{
+    color: #BE0F30; 
+}
+
+.createAccount a:hover {
+    transition: .4s;
+}

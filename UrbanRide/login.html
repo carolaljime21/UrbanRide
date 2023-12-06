@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf'8">
+	<meta name="viewport" content="wifth=device'width,
+	intial'scale=1">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <article class="loginContainer">
+        <img src="images/login.jpg">
+        <section class="registro">
+            <h2>Bienvenido a UrbanRide</h2>
+            <h3>Inicia Sesion</h3>
+            <section class="input">
+                <label for="username">Usuario o Correo </label>
+                <input type="text" id="username" name="username" required>
+            </section>
+            <section class="input">
+                <label for="password">Contraseña </label>
+                <input type="password" id="password" name="password" required>
+            </section>
+            <section class="boton">
+                <button type="button" onclick="redireccionar()">Ingresar</button>
+            </section>
+            <section class="createAccount">
+                <p>No tienes cuenta? </p>
+                <a href="">Registrate</a>
+            </section>
+        </section>
+
+        <script>
+            function redireccionar(){
+                window.location.href = 'inicio.html'
+            }
+        </script>
+    </article>
+</body>
+</html>
