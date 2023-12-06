@@ -6,7 +6,7 @@
 }
 
 .principal{
-    background-image: url('C:/Users/HP/Desktop/trabajos/UrbanRide/UrbanRide/images/MainFoto.jpg');
+    background-image: url('"C:/xampp/htdocs/UrbanRide/UrbanRide/images/MainFoto.jpg"');
     background-size: 100%;
     background-position: start;
     background-repeat: no-repeat;
