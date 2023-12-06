@@ -2,9 +2,9 @@
 
 /*Estilo de la cabecera y Menu de navegacion*/
 
-*{
-	padding: 0;
-	margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 .cabeceraPrincipal {
@@ -35,8 +35,8 @@
 }
 
 .menuPrincipal a:hover {
-    color: #BE0F30; 
-    border-bottom: 2px solid #BE0F30; 
+    color: #BE0F30;
+    border-bottom: 2px solid #BE0F30;
     transition: .4s;
 }
 
@@ -61,19 +61,24 @@ button {
 
 /* Estilos del contenido de la pagina */
 
-.eBike{
-    position: relative; 
+.eBike {
+    position: relative;
 }
 
-.eBike img, .info2 img, .info3 img{
+.eBike img,
+.info2 img,
+.info3 img {
     width: 100%;
+    margin: 0;
 }
 
-.eBike h2{
+.eBike h2 {
     position: absolute;
-    top: 65px; /* Ajusta según sea necesario para la posición vertical */
-    left: 110px; /* Ajusta según sea necesario para la posición horizontal */
-    color: #FFFFFF; 
+    top: 65px;
+    /* Ajusta según sea necesario para la posición vertical */
+    left: 110px;
+    /* Ajusta según sea necesario para la posición horizontal */
+    color: #FFFFFF;
     font-family: 'Anek Latin', sans-serif;
     margin: 0;
     font-weight: 700;
@@ -83,22 +88,22 @@ button {
     border-radius: 10px;
 }
 
-.information{
+.information {
     font-family: 'Anek Latin', sans-serif;
 }
 
-.info1{
+.info1 {
     background-color: #282828;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: space-between;
 }
 
-.info1 h3{
+.info1 h3 {
     color: #FFFFFF;
-    text-align: center; 
+    text-align: center;
     padding: 15px;
     font-size: 400;
 }
@@ -107,69 +112,83 @@ button {
     background-color: #282828;
     text-align: center;
     width: 80%;
-    margin: 10px; 
-    border-radius: 10px; 
+    margin: 10px;
+    border-radius: 10px;
     padding: 15px 100px;
 
 }
 
-.infoCard h4{
+.infoCard h4 {
     color: #C5A76A;
     font-weight: 600;
 }
 
-.infoCard p{
+.infoCard p {
     color: #FFFFFF;
     font-weight: 100;
 }
 
-.info2{
+.info2 {
     position: relative;
 }
 
-.info2 p{
+.info2 p {
     position: absolute;
     top: 40px;
     left: 110px;
-    color: #282828; 
+    color: #282828;
     font-weight: 800;
     font-size: 50px;
     text-align: left;
     width: 300px;
 }
 
-.info4{
+.info4 {
     background-color: #C5A76A;
     align-items: center;
     display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    height: 400px;
 }
 
-.info4 section{
+.info4 section {
     text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info4 section h3{
-	align-items: center;
-	text-align: center;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 800;
-	line-height: normal;
-	padding: 1em 0;
+.info4 section h3 {
+    align-items: center;
+    text-align: start;
+    color: #000;
+    font-family: 'Anek Tamil', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 80px;
+    padding-left: 70px;
+
 }
 
-.info4 section p{
-	align-items: center;
-	text-align: center;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	padding: 1em 0;
+.info4 section p {
+    align-items: center;
+    text-align: start;
+    padding: 0px;
+    color: #000;
+    font-family: 'Anek Tamil', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 80px;
+    padding-left: 70px;
+    padding-top: 2px;
+}
+
+.info4 img{
+    margin-left: 80px;
 }
 
 
@@ -182,30 +201,29 @@ button {
     align-items: center;
 }
 
-.piePag a{
+.piePag a {
     display: flex;
     margin-left: 150px;
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
-.piePag img{
+.piePag img {
     height: 100px;
     margin-left: 80px;
 }
 
-.piePag h4{
+.piePag h4 {
     color: #FFFFFF;
     display: flex;
     margin-left: 150px;
     font-family: 'Poppins', sans-serif;
 }
 
-.piePag i{
+.piePag i {
     display: flex;
     padding-bottom: 6px;
     padding-right: 10px;
     margin-left: 0px;
 }
-
