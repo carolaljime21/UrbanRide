@@ -2,6 +2,11 @@
 
 /*Estilo de la cabecera y Menu de navegacion*/
 
+*{
+	padding: 0;
+	margin: 0;
+}
+
 .cabeceraPrincipal {
     background: black;
     display: flex;

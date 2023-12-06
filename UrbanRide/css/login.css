@@ -8,8 +8,9 @@ body {
     background-color: #282828;
     display: flex;
     justify-content: space-between;
-    margin: 30px 240px;
+    margin: 100px 100px;
     border-radius: 15px;
+    height: 600px;
 }
 
 .loginContainer img{
