@@ -114,11 +114,13 @@ button {
 .infoCard h4{
     color: #C5A76A;
     font-weight: 600;
+    font-size: 22px;
 }
 
 .infoCard p{
     color: #FFFFFF;
     font-weight: 100;
+    font-size: 20px;
 }
 
 .info2{
@@ -144,32 +146,31 @@ button {
 }
 
 .info4 section{
-    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    text-align: left;
     top: 40px;
-    right: 300px;
-    background-color: #FFFFFF;
+    margin-right: 30px;
+    padding: 1em 175px;
 }
 
 .info4 section h3{
-	align-items: left;
-	text-align: left;
-	font-size: 30px;
+	font-size: 35px;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 800;
 	padding: 1em 0;
 }
 
 .info4 section p{
-	align-items: center;
-	text-align: center;
-	font-size: 16px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
 	padding: 1em 0;
+}
+.info4 img{
+    margin-left: 70px;
 }
 
 
