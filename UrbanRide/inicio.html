@@ -6,6 +6,7 @@
 	intial'scale=1">
 	<link rel="stylesheet" type="text/css" href="css/inicioEstilos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <main class="principal">
@@ -16,7 +17,7 @@
                 <a href="nosotros.html">Nosotros</a>
                 <a href="eBikes.html">E-Bikes</a>
                 <a href="">Sugerencias</a>
-                <a href="">Mapa</a>
+                <a href="#mapa">Mapa</a>
                 <a href="">Ayuda</a>
                 <a href="login.html"><i class="fa-solid fa-user"></i> Cuenta</a>
             </nav>
@@ -34,7 +35,7 @@
 
         <section class="servicios">
             <article class="itemCard">
-                <img src="images/bikeCard.png">
+                <img class="bike" src="images/bikeCard.png">
                 <h5>E-BIKES</h5>
             </article>
     
@@ -91,7 +92,7 @@
             </section>
         </section>
 
-        <section class="mapa">
+        <section class="mapa" id="mapa">
             <h1>MAPA DE BUSQUEDA</h1>
             <div class="mapouter">
                 <div class="gmap_canvas">
@@ -138,4 +139,17 @@
         </footer>
     </main>
 </body>
+<script>
+    $(document).ready(function() {
+        $('a[href^="#mapa"]').on('click', function(event) {
+            var target = $($(this).attr('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+            }
+        });
+    });
+    </script>
 </html>>
