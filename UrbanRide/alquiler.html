@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/alquiler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>UrbanRide - eBikes</title>
+</head>
+<body>
+
+    <!-- Cabecera principal y menu de navegacion-->
+    <header class="cabeceraPrincipal">
+        <img class="logoWh" src="images/logoWh.png">
+        <nav class="menuPrincipal">
+            <a href="inicio.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="eBikes.html">E-Bikes</a>
+            <a href="">Sugerencias</a>
+            <a href="">Mapa</a>
+            <a href="">Ayuda</a>
+            <a href="login.html"><i class="fa-solid fa-user"></i> Cuenta</a>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina web-->
+
+    <article class="eBike">
+        <img src="images/eBike.jpg">
+        <img src="images/logo2.png" class="logo">
+    </article>
+
+    <section class="rent">
+        <h3>Datos para tu alquiler</h3>
+
+        <form action="#" method="post" id="alquiler-form">
+            <section class="form-group">
+                <label for="nombre">Nombre del cliente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </section>
+
+            <section class="form-group">
+                <label for="direccion">Dirección:</label>
+                <select id="direccion" name="direccion" required>
+                    <option value="direccion1">Dirección 1</option>
+                    <option value="direccion2">Dirección 2</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </section>
+
+            <section class="form-group">
+                <label for="articulo">Selecciona el artículo:</label>
+                <select id="articulo" name="articulo" required>
+                    <option value="bicicleta">Bicicleta</option>
+                    <option value="scooter">Scooter</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </section>
+
+            <section class="form-group">
+                <button type="submit">Buscar</button>
+            </section>
+        </form>
+    </section>
+    
+</body>
+</html>

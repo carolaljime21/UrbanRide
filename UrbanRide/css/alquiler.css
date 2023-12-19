@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Poppins:wght@100;400;500;800&display=swap');
+
+/*Estilo de la cabecera y Menu de navegacion*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cabeceraPrincipal {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+}
+
+.menuPrincipal {
+    display: flex;
+    align-items: center;
+}
+
+.menuPrincipal a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 49px;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.logoWh {
+    margin-left: 80px;
+}
+
+.menuPrincipal a:hover {
+    color: #BE0F30;
+    border-bottom: 2px solid #BE0F30;
+    transition: .4s;
+}
+
+button {
+    background: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    width: 106px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    position: relative;
+}
+
+.fa-user {
+    margin-right: 5px;
+    position: absolute;
+    left: -14px;
+}
+
+/* Estilos del contenido de la pagina */
+
+.eBike {
+    position: relative;
+}
+
+.eBike img {
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    max-width: 50%; 
+    z-index: 2; 
+}
+
+.rent {
+    margin: 20px;
+}
+
+.rent h3 {
+    text-align: center;
+    color: black; 
+    font-family: 'Anek Tamil', sans-serif;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-left: 75px;
+    margin-right: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; 
+    font-family: 'Poppins', sans-serif;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #BE0F30;
+    font-family: 'Anek Tamil', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 30px; 
+}
+
+button:hover {
+    background-color: #94162d;
+}
