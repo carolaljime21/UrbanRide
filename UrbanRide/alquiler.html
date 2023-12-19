@@ -30,9 +30,11 @@
         <img src="images/logo2.png" class="logo">
     </article>
 
-    <section class="rent">
+    <section class="titulos">
         <h3>Datos para tu alquiler</h3>
+    </section>
 
+    <section class="rent">
         <form action="#" method="post" id="alquiler-form">
             <section class="form-group">
                 <label for="nombre">Nombre del cliente:</label>
@@ -61,7 +63,58 @@
                 <button type="submit">Buscar</button>
             </section>
         </form>
+
+        <section class="resultados" id="resultados">
+            <!-- Resultados -->
+        </section>
     </section>
+
+    <script>
+        document.getElementById('alquiler-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evitar que el formulario se envíe
+    
+        // Simulación de resultados de búsqueda
+        var resultados = [
+            { imagen: 'ruta_imagen1.jpg', codigo: 'ABC123', estado: 'Disponible', bateria: 80, estrellas: 4 },
+            { imagen: 'ruta_imagen2.jpg', codigo: 'XYZ456', estado: 'En uso', bateria: 60, estrellas: 5 },
+        ];
+    
+        mostrarResultados(resultados);
+        });
+    
+        function mostrarResultados(resultados) {
+        var resultadosContainer = document.getElementById('resultados');
+        resultadosContainer.innerHTML = ''; // Limpiar los resultados anteriores
+    
+        resultados.forEach(function (resultado) {
+            var card = document.createElement('section');
+            card.className = 'bikeCard';
+    
+            // Crear elementos para cada propiedad del resultado
+            var imagen = document.createElement('img');
+            imagen.src = resultado.imagen;
+            var codigo = document.createElement('p');
+            codigo.textContent = 'Código: ' + resultado.codigo;
+            var estado = document.createElement('p');
+            estado.textContent = 'Estado: ' + resultado.estado;
+            var bateria = document.createElement('p');
+            bateria.textContent = 'Batería: ' + resultado.bateria + '%';
+            var estrellas = document.createElement('p');
+            estrellas.textContent = 'Estrellas: ' + resultado.estrellas;
+    
+            // Agregar elementos al card
+            card.appendChild(imagen);
+            card.appendChild(codigo);
+            card.appendChild(estado);
+            card.appendChild(bateria);
+            card.appendChild(estrellas);
+    
+            // Agregar card a la sección de resultados
+            resultadosContainer.appendChild(card);
+        });
+        }
+    </script>
+  
     
 </body>
 </html>

@@ -79,11 +79,7 @@ button {
     z-index: 2; 
 }
 
-.rent {
-    margin: 20px;
-}
-
-.rent h3 {
+.titulos h3 {
     text-align: center;
     color: black; 
     font-family: 'Anek Tamil', sans-serif;
@@ -91,10 +87,17 @@ button {
     margin: 40px;
 }
 
+.rent {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #94162d;
+}
+
 .form-group {
     margin-bottom: 20px;
     margin-left: 75px;
-    margin-right: 900px;
+    width: 100%;
 }
 
 label {
@@ -127,4 +130,39 @@ button {
 
 button:hover {
     background-color: #94162d;
+}
+
+
+
+/* Estilo para la sección de resultados */
+.resultados {
+    font-family: 'Anek Tamil', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Estilo para cada tarjeta de bicicleta */
+.bikeCard {
+    width: 500px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em 90px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la imagen de la bicicleta */
+.bikeCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para cada propiedad dentro de la tarjeta */
+.bikeCard p {
+    margin: 5px 0;
 }
