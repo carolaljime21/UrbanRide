@@ -1,4 +1,5 @@
 -- Crear tabla de usuarios
+-- Crear tabla de usuarios con ubicación
 CREATE TABLE usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nombres VARCHAR(50) NOT NULL,
@@ -7,8 +8,11 @@ CREATE TABLE usuarios (
     username VARCHAR(15) NOT NULL,
     contraseña VARCHAR(10) NOT NULL,
     correo VARCHAR(100) NOT NULL,
-    celular VARCHAR(10) NOT NULL
+    celular VARCHAR(10) NOT NULL,
+    id_ubicacion INT,
+    FOREIGN KEY (id_ubicacion) REFERENCES ubicaciones(id_ubicacion)
 );
+
 
 -- Crear tabla de bicicletas
 CREATE TABLE bicicletas (
@@ -44,8 +48,10 @@ CREATE TABLE productos (
 -- Crear tabla de ubicaciones
 CREATE TABLE ubicaciones (
     id_ubicacion INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(50) NOT NULL
+    nombre VARCHAR(50) NOT NULL,
+    codigo_postal VARCHAR(10)
 );
+
 
 -- Crear tabla de alquileres
 CREATE TABLE alquileres (
