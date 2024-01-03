@@ -11,7 +11,7 @@ if ($correo && $clave) {
     $miconexion->conectar($host, $userdb, $userpass, $dbname);
 
     // Consulta de la base de datos
-    $sql = "SELECT * FROM usuarios WHERE correo='$correo' AND contraseña='$clave'";
+    $sql = "SELECT * FROM usuarios WHERE correo='$correo' AND contrasena='$clave'";
     $miconexion->consulta($sql);
 
     // Verificar si la consulta devuelve al menos una fila
