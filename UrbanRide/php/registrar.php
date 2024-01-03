@@ -57,12 +57,12 @@
             <div class="input">
                 <label for="ubicacion">Seleccione su ubicacion</label>
                 <select name="ubicacion" id="ubicacion">
-                <option value="El Sagrario">El Sagrario</option>
-                    <option value="Sucre">Sucre</option>
-                    <option value="El valle">El Valle</option>
-                    <option value="San Sebastian">San Sebastián</option>
-                    <option value="Punzara">Punzara</option>
-                    <option value="Carigan">Carigán</option>
+                <option value="1">El Sagrario</option>
+                    <option value="2">Sucre</option>
+                    <option value="3">El Valle</option>
+                    <option value="4">San Sebastián</option>
+                    <option value="5">Punzara</option>
+                    <option value="6">Carigán</option>
                 </select>
             </div>
 
