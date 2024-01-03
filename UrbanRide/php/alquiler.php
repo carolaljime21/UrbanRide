@@ -1,3 +1,7 @@
+<?php
+include('controlSeguridad.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
