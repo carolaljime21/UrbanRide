@@ -5,7 +5,6 @@ CREATE TABLE usuarios (
     nombres VARCHAR(50) NOT NULL,
     apellidos VARCHAR(50) NOT NULL,
     dni VARCHAR(13) NOT NULL,
-    username VARCHAR(15) NOT NULL,
     contraseña VARCHAR(10) NOT NULL,
     correo VARCHAR(100) NOT NULL,
     celular VARCHAR(10) NOT NULL,
