@@ -10,31 +10,29 @@
 <body>
     <article class="loginContainer">
         <img src="images/login.jpg">
+
         <section class="registro">
             <h2>Bienvenido a UrbanRide</h2>
             <h3>Inicia Sesion</h3>
-            <section class="input">
-                <label for="username">Usuario o Correo</label>
-                <input type="text" id="username" name="username" required>
-            </section>
-            <section class="input">
-                <label for="password">Contraseña </label>
-                <input type="password" id="password" name="password" required>
-            </section>
-            <section class="boton">
-                <button type="button" onclick="redireccionar()">Ingresar</button>
-            </section>
+
+            <form action="php/validar.php" method="post">
+                <section class="input">
+                    <label for="username">Correo electronico</label>
+                    <input type="text" id="correo" name="correo" required>
+                </section>
+                <section class="input">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" id="clave" name="clave" required>
+                </section>
+
+                <button class="boton">INGRESAR</button>
+			</form>
+
             <section class="createAccount">
                 <p>¿No tienes cuenta? </p>
-                <a href="registro.html">Registrate</a>
+                <a href="php/registrar.php">Registrate</a>
             </section>
         </section>
-
-        <script>
-            function redireccionar(){
-                window.location.href = 'inicio.html'
-            }
-        </script>
     </article>
 </body>
 </html>

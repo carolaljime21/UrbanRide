@@ -12,64 +12,60 @@
 <body>
     <article class="loginContainer">
         <img src="images/registro.jpg">
-        <section class="registro">
-            <h2>Bienvenido a UrbanRide</h2>
-            <h3>Regístrate</h3>
-            <section class="input">
-                <label for="nombres">Nombres</label>
-                <input type="text" id="nombres" name="nombres" required>
-            </section>
-
-            <section class="input">
-                <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos" name="apellidos" required>
-            </section>
-
-            <section class="input">
-                <label for="celular">Celular</label>
-                <input type="text" id="celular" name="celular" required>
-            </section>
-
-            <section class="input">
-                <label for="correo">Correo</label>
-                <input type="email" id="correo" name="correo" required>
-            </section>
-            <section class="input">
-                <label for="cedula">Cédula</label>
-                <input type="text" id="cedula" name="cedula" pattern="[0-9]{10}" inputmode="numeric" required>
-            </section>
-            <section class="input">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required>
-            </section>
-
-            <section class="input">
-                <label for="ubicacion">Ubicación</label>
-            <select name="ubicacion">
-                <option value="el_sagrario">El Sagrario</option>
-                <option value="sucre">Sucre</option>
-                <option value="el_valle">El Valle</option>
-                <option value="san_sebastian">San Sebastián</option>
-                <option value="punzara">Punzara</option>
-                <option value="carigan">Carigán</option>
-            </select>
-            </section>
-
-            <section class="boton">
-                <button type="button" onclick="registrar()">Registrarse</button>
-            </section>
             <section class="login">
                 <p>¿Ya tienes cuenta? </p>
                 <a href="login.html">Ingresa</a>
             </section>
         </section>
 
-        <script>
-            function registrar() {
-                // Aquí puedes agregar lógica de registro si es necesario
-                window.location.href = 'inicio.html';
-            }
-        </script>
+        <form action="php/registrar.php">
+
+            <section class="registro">
+                <h2>Bienvenido a UrbanRide</h2>
+                <h3>Regístrate</h3>
+
+                <section class="input">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </section>
+    
+                <section class="input">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </section>
+    
+                <section class="input">
+                    <label for="celular">Celular</label>
+                    <input type="text" id="celular" name="celular" required>
+                </section>
+    
+                <section class="input">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </section>
+                <section class="input">
+                    <label for="cedula">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" pattern="[0-9]{10}" inputmode="numeric" required>
+                </section>
+                <section class="input">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </section>
+    
+                <section class="input">
+                    <label for="ubicacion">Ubicación</label>
+                <select name="ubicacion">
+                    <option value="el_sagrario">El Sagrario</option>
+                    <option value="sucre">Sucre</option>
+                    <option value="el_valle">El Valle</option>
+                    <option value="san_sebastian">San Sebastián</option>
+                    <option value="punzara">Punzara</option>
+                    <option value="carigan">Carigán</option>
+                </select>
+                </section>
+
+                <button type="submit">Registrarme</button>
+        </form>
     </article>
 </body>
 

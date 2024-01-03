@@ -8,8 +8,7 @@ CREATE TABLE usuarios (
     contraseña VARCHAR(10) NOT NULL,
     correo VARCHAR(100) NOT NULL,
     celular VARCHAR(10) NOT NULL,
-    id_ubicacion INT,
-    FOREIGN KEY (id_ubicacion) REFERENCES ubicaciones(id_ubicacion)
+    ubicacion VARCHAR(50)
 );
 
 

@@ -82,7 +82,7 @@ body {
 }
 
 
-.boton button{
+.boton {
     background-color: #BE0F30;
     padding: 8px 20px;
     font-family: 'Anek Tamil', sans-serif;
@@ -95,7 +95,7 @@ body {
     margin: 30px 260px;
 }
 
-button:hover {
+.boton button:hover {
     background-color: #94162d;
 }
 
