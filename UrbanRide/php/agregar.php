@@ -10,7 +10,7 @@
     $res = $miconexion->consulta($sql);
     if($res){
         echo '<script>alert("Usuario Registrado");</script>';
-        echo "<script>location.href='../inicio.html'</script>";
+        echo "<script>location.href='../inicio.php'</script>";
     }
         
 ?>

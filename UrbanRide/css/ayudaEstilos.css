@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&family=Inter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.principal{
+    background-image: url('../images/imgAyuda.png');
+    background-size: 100%;
+    background-position: start;
+    background-repeat: no-repeat;
+    height: 790px;
+    font-family: 'Anek Tamil', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.cabeceraPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.menuPrincipal {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.logoWh {
+    margin-left: 80px;
+}
+
+.menuPrincipal a {
+    padding: 0.5em 1em;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.menuPrincipal .menuCuenta {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.menuPrincipal button{
+    padding: 0em 2em;
+	text-decoration: none;
+}
+
+.menuPrincipal button:hover{
+    color: #BE0F30;
+	border-bottom: solid 2px #BE0F30;
+}
+
+.menuPrincipal a:hover{
+	color: #BE0F30;
+	border-bottom: solid 2px #BE0F30;
+}
+
+
+/*Prueba menu desplegable*/
+
+.menuCuenta a:hover{
+    border-bottom: none;
+}
+.cuentaDropdown {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background-color: #BE0F30;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.menuCuenta:hover .cuentaDropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menuCuenta .cuentaDropdown.activo {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.cuentaDropdown a:hover {
+    color: #000;
+}
+
+.Frase {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 970px;
+    height: 361px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.62);
+    backdrop-filter: blur(7.5px); 
+    margin: auto;
+    margin-top: 120px; 
+
+   
+}
+.Frase h1 {
+    margin: 0.8em 0em 0em 0em;
+    font-size: 3.5em;
+    font-size: 64px; 
+    font-weight: 600; 
+    font-family: 'Anek Tamil', sans-serif;}
+
+.Barra{
+    margin-top: 40px;
+    padding-top: 0.6em;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #FFF;
+    border-radius: 30px;
+    width: 695.528px;
+    height: 47px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Barra i{
+    font-size: xx-large;
+}
+

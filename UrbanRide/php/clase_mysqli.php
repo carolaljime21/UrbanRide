@@ -36,7 +36,6 @@ class class_mysqli{
         }
         return $this->Conecxion_ID;
     }
-
     function consulta($sql=""){
         if($sql==""){
             $this->Error="No hay ninguna sql";
@@ -45,6 +44,38 @@ class class_mysqli{
         $this->Consulta_ID= mysqli_query($this->Conecxion_ID, $sql);
         return $this->Conecxion_ID;
     }
+     function numcampos(){
+        return mysqli_num_fields($this->Consulta_ID); 
+     }
+     function numregistros(){
+        return mysqli_num_rows($this->Consulta_ID);
+     }
+
+     function verconsulta(){
+        echo "<table border='1'>";
+        echo "<tr>";
+        for ($i=0; $i < $this->numcampos(); $i++) { 
+            echo "<td>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
+        }
+        echo "</tr>";
+        while ($row=mysqli_fetch_array($this->Consulta_ID)) {
+            echo "<tr>";
+            for ($i=0; $i < $this->numcampos(); $i++) { 
+                echo "<td>".$row[$i]."</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
+     }
+
+     function consulta_lista(){
+        while ($row=mysqli_fetch_array($this->Consulta_ID)) {
+            for ($i=0; $i < $this->numcampos(); $i++) { 
+                $row[$i];
+            }
+            return $row;
+        }
+     }
 
     function consulta_num_rows() {
         return mysqli_num_rows($this->Consulta_ID);
