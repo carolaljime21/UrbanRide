@@ -1,7 +1,6 @@
 <?php 
 session_start();
-if ($_SESSION['sesion_name'] AND $_SESSION['autentificado'] AND 
-     $_SESSION['sesion_rol']) {
+if ($_SESSION['sesion_name'] AND $_SESSION['autentificado']) {
 	include('../dll/config.php');
 	include('../dll/clase_mysqli.php');
 	

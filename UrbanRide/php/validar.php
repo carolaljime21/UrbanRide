@@ -18,7 +18,7 @@ if ($correo && $clave) {
     if ($miconexion->consulta_num_rows() > 0) {
         session_start();
         $_SESSION['autentificado'] = TRUE;
-        $_SESSION['sesion_name'] = $correo; // Puedes usar el correo como nombre de sesión si lo prefieres
+        $_SESSION['sesion_name'] = $correo;
         echo "<script>location.href='../inicio.html'</script>";
     } else {
         echo '<script>alert("Datos Incorrectos...");</script>';
