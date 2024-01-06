@@ -20,9 +20,14 @@ if ($correo && $contrasena) {
     if ($miconexion->consulta_num_rows() > 0) {
         session_start();
         $_SESSION['autentificado'] = TRUE;
+<<<<<<< HEAD
         $_SESSION['sesion_name'] = $listaUser[1]; // Puedes usar el correo como nombre de sesión si lo prefieres]
 
         echo "<script>location.href='inicio.php'</script>";
+=======
+        $_SESSION['sesion_name'] = $correo;
+        echo "<script>location.href='../inicio.html'</script>";
+>>>>>>> 579a4a536efb7dae9dabad532e0988875ceeb4b2
     } else {
         echo '<script>alert("Datos1 Incorrectos...");</script>';
         echo "<script>location.href='../login.html'</script>";
