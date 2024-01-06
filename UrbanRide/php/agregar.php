@@ -6,7 +6,7 @@
 
     extract($_POST);
 
-    $sql = "insert into usuarios values ('', '$nombres', '$apellidos', '$dni', '$contraseña', '$correo', '$celular', '$ubicacion')";
+    $sql = "insert into usuarios values ('', '$nombres', '$apellidos', '$dni', '$contrasena', '$correo', '$celular', '$ubicacion')";
     $res = $miconexion->consulta($sql);
     if($res){
         echo '<script>alert("Usuario Registrado");</script>';
