@@ -1,6 +1,7 @@
 <?php
-    include('controlSeguridad.php');
+session_start();
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -22,7 +23,23 @@
                 <a href="">Sugerencias</a>
                 <a href="#mapa">Mapa</a>
                 <a href="Ayuda.html">Ayuda</a>
-                <a href="login.html"><i class="fa-solid fa-user"></i> <?php echo $_SESSION["sesion_name"];?>
+                  <article class="menuCuenta">
+                    <a href="#" id="cuentaDropdown">
+                        <i class="fa-solid fa-user"></i>
+                        <?php 
+                            echo isset($_SESSION["sesion_name"]) ? $_SESSION["sesion_name"] : "Cuenta";
+                        ?>
+                    </a>
+                    <?php if (isset($_SESSION["sesion_name"])) : ?>
+                        <article class="cuentaDropdown">
+                            <a href="">Configuracion</a>
+                            <a href="">Reservas</a>
+                            <a href="">Historial</a>
+                            <a href="">Pagos</a>
+                            <a href="exit.php">Cerrar sesion</a>
+                        </article>
+                    <?php endif; ?>
+                </article>
             </nav>
         </header>
 

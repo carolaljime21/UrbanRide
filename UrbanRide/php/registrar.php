@@ -41,7 +41,7 @@
 
             <div class="input">
                 <label for="contraseña">Contraseña</label>
-                <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña">
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
             </div>
 
             <div class="input">
