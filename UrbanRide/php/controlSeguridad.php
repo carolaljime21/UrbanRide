@@ -9,7 +9,7 @@ if ($_SESSION['sesion_name'] AND $_SESSION['autentificado'] AND
 	$miconexion-> conectar($host, $userdb, $userpass, $dbname);
 } else {
 	echo '<script>alert("Datos incorrectos...");</script>';
-	echo "<script>location.href='../internas/login.html'</script>";
+	echo "<script>location.href='../login.html'</script>";
 }
 
  ?>
