@@ -5,7 +5,7 @@ CREATE TABLE usuarios (
     nombres VARCHAR(50) NOT NULL,
     apellidos VARCHAR(50) NOT NULL,
     dni VARCHAR(13) NOT NULL,
-    contraseña VARCHAR(10) NOT NULL,
+    contrasena VARCHAR(50) NOT NULL,
     correo VARCHAR(100) NOT NULL,
     celular VARCHAR(10) NOT NULL,
     ubicacion VARCHAR(50)
@@ -20,7 +20,9 @@ CREATE TABLE bicicletas (
     estado VARCHAR(10),
     bateria INT NOT NULL,
     calificacion_bicicleta DECIMAL(2, 1),
-    costo_alquilerBi DECIMAL(2,1)
+    costo_alquilerBi DECIMAL(2,1),
+    ubicacion VARCHAR(150);
+    nombre_propietario VARCHAR(150)
 );
 
 -- Crear tabla de scooters
@@ -31,7 +33,9 @@ CREATE TABLE scooters (
     estado VARCHAR(10),
     calificacion_scooter DECIMAL(2, 1),
     potencia_motor INT,
-    costo_alquilerSC DECIMAL(2,1)
+    costo_alquilerSC DECIMAL(2,1),
+    ubicacion VARCHAR(150);
+    nombre_propietario VARCHAR(150)
 );
 
 -- Crear tabla de productos

@@ -3,6 +3,7 @@
 *{
 	padding: 0;
 	margin: 0;
+    text-decoration: none;
 }
 
 .principal{
@@ -241,6 +242,7 @@
 }
 
 .noticias .noticia3{
+    text-decoration: none;
     display: flex;
     align-items: center;
     margin-right: 250px;
